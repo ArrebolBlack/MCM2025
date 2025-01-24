@@ -478,7 +478,8 @@ country_list = [
 
 # 构建数据集
 data = []
-for year in year_list:
+year_list_2 = [1920] + year_list # 1916 停办
+for year in year_list_2:
     host = host_data.loc[host_data['Year'] == year, 'Host Country'].values[0]
     host_NOC = country_to_noc[host]
     for country in country_list:
@@ -515,7 +516,7 @@ data_df = pd.DataFrame(data, columns=columns)
 print(data_df.info())
 print(data_df)
 
-# data_df.to_csv("YearCountry-host-medal.csv")
+data_df.to_csv("YearCountry-host-medal.csv")
 
 # year = 2024
 # athlete_data.loc[]
