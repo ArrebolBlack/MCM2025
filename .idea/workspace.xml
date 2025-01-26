@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="488c9869-b615-4c2b-9ea0-bea6bcb4e2d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/make_data_for_dzt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q1_2_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q1_2_make_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q1_2_train_multi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q1_ML_auto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q1_ML_auto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1_DL.py" beforeDir="false" afterPath="$PROJECT_DIR$/q1_DL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1_ML.py" beforeDir="false" afterPath="$PROJECT_DIR$/q1_ML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1_data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/q1_data_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q1_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/q1_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_forest_model.pkl" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
