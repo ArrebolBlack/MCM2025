@@ -8,12 +8,15 @@ from sklearn.metrics import classification_report, accuracy_score
 import os
 import wandb
 
-# 初始化 WandB
-wandb.init(project="MCM2025Q1", entity="tbsi")
 
-def train(model, train_loader, criterion, optimizer, num_epochs=100, device='cuda', save_path="model", scheduler=None):
-    best_accuracy = 0.0
-    lowest_loss = float('inf')
+# 初始化 WandB
+# wandb.init(project="MCM2025Q1", entity="tbsi")
+
+def train(model, train_loader, criterion, optimizer, num_epochs=100, device='cuda', save_path="checkpoints/",
+          scheduler=None, task_type=None):
+    assert task_type in ["classification", "regression"], "task_type must be either 'classification' or 'regression'"
+
+    best_metric = 0.0 if task_type == 'classification' else float('inf')
     model.to(device)
 
     # 数据并行
@@ -39,36 +42,49 @@ def train(model, train_loader, criterion, optimizer, num_epochs=100, device='cud
 
                 # 累积指标
                 running_loss += loss.item()
-                _, predicted = torch.max(outputs, 1)
-                total += targets.size(0)
-                correct += (predicted == targets).sum().item()
 
-                pbar.set_postfix({'loss': running_loss / (pbar.n + 1), 'accuracy': 100. * correct / total})
+                if task_type == 'classification':
+                    _, predicted = torch.max(outputs, 1)
+                    correct += (predicted == targets).sum().item()
+                    total += targets.size(0)
+                    accuracy = 100. * correct / total
+                    pbar.set_postfix({'loss': running_loss / (pbar.n + 1), 'accuracy': accuracy})
+                else:
+                    total += targets.size(0)
+                    pbar.set_postfix({'loss': running_loss / (pbar.n + 1)})
+
                 pbar.update()
 
         # 计算每个 epoch 的指标
         epoch_loss = running_loss / len(train_loader)
-        epoch_accuracy = 100. * correct / total
-        print(f'Epoch {epoch + 1}/{num_epochs} - Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.2f}%')
+        if task_type == 'classification':
+            epoch_metric = 100. * correct / total
+            print(f'Epoch {epoch + 1}/{num_epochs} - Loss: {epoch_loss:.4f}, Accuracy: {epoch_metric:.2f}%')
+        else:
+            epoch_metric = epoch_loss
+            print(f'Epoch {epoch + 1}/{num_epochs} - Loss: {epoch_loss:.4f}')
 
         # 将指标记录到 WandB
-        wandb.log({'epoch': epoch + 1, 'loss': epoch_loss, 'accuracy': epoch_accuracy})
+        log_data = {'epoch': epoch + 1, 'loss': epoch_loss}
+        if task_type == 'classification':
+            log_data['accuracy'] = epoch_metric
+        wandb.log(log_data)
 
         if scheduler:
             scheduler.step()  # 更新学习率
 
         # 保存模型
-        if epoch_accuracy > best_accuracy:
-            best_accuracy = epoch_accuracy
-            torch.save(model.state_dict(), f"{save_path}_best_accuracy_epoch_{epoch + 1}.pth")
-            print(f"最佳准确率模型已保存，准确率: {best_accuracy:.2f}%")
+        if (task_type == 'classification' and epoch_metric > best_metric) or (
+                task_type == 'regression' and epoch_metric < best_metric):
+            best_metric = epoch_metric
+            model_path = f"{save_path}_best_model_epoch_{epoch + 1}.pth"
+            torch.save(model.state_dict(), model_path)
+            print(f"最佳模型已保存，指标: {epoch_metric:.4f}")
 
-        if epoch_loss < lowest_loss:
-            lowest_loss = epoch_loss
-            torch.save(model.state_dict(), f"{save_path}_lowest_loss_epoch_{epoch + 1}.pth")
-            print(f"最低损失模型已保存，损失: {lowest_loss:.4f}")
 
-def eval(model, test_loader, criterion, device='cuda'):
+def eval(model, test_loader, criterion, device='cuda', task_type=None):
+    assert task_type in ["classification", "regression"], "task_type must be either 'classification' or 'regression'"
+
     model.to(device)
     model.eval()
 
@@ -86,41 +102,54 @@ def eval(model, test_loader, criterion, device='cuda'):
             loss = criterion(outputs, targets)
             running_loss += loss.item()
 
-            _, predicted = torch.max(outputs, 1)
-            total += targets.size(0)
-            correct += (predicted == targets).sum().item()
-
-            all_targets.extend(targets.cpu().numpy())
-            all_predictions.extend(predicted.cpu().numpy())
+            if task_type == 'classification':
+                _, predicted = torch.max(outputs, 1)
+                correct += (predicted == targets).sum().item()
+                total += targets.size(0)
+                all_targets.extend(targets.cpu().numpy())
+                all_predictions.extend(predicted.cpu().numpy())
+            else:
+                all_targets.extend(targets.cpu().numpy())
+                all_predictions.extend(outputs.cpu().numpy().reshape(-1))
 
     loss = running_loss / len(test_loader)
-    accuracy = 100. * correct / total
+    if task_type == 'classification':
+        accuracy = 100. * correct / total
+        print(f'评估 - 损失: {loss:.4f}, 准确率: {accuracy:.2f}%')
+        print("分类报告:")
+        print(classification_report(all_targets, all_predictions))
+        wandb.log({'eval_loss': loss, 'eval_accuracy': accuracy})
+    else:
+        # 计算回归的评估指标
+        mse = np.mean((np.array(all_targets) - np.array(all_predictions)) ** 2)
+        rmse = np.sqrt(mse)
+        mae = np.mean(np.abs(np.array(all_targets) - np.array(all_predictions)))
+        ss_total = np.sum((np.array(all_targets) - np.mean(all_targets)) ** 2)
+        ss_res = np.sum((np.array(all_targets) - np.array(all_predictions)) ** 2)
+        r_squared = 1 - (ss_res / ss_total)
 
-    print(f'评估 - 损失: {loss:.4f}, 准确率: {accuracy:.2f}%')
-    print("分类报告:")
-    print(classification_report(all_targets, all_predictions))
+        print(f'评估 - 损失: {loss:.4f}, MSE: {mse:.4f}, RMSE: {rmse:.4f}, MAE: {mae:.4f}, R²: {r_squared:.4f}')
+        wandb.log({'eval_loss': loss, 'eval_mse': mse, 'eval_rmse': rmse, 'eval_mae': mae, 'eval_r2': r_squared})
 
-    # 将评估指标记录到 WandB
-    wandb.log({'eval_loss': loss, 'eval_accuracy': accuracy})
+    return loss
 
-    return loss, accuracy
 
 # 使用示例
 # 假设 `train_loader` 和 `test_loader` 已定义，并且 `model` 是你的神经网络
 
-# # 示例超参数
+# 示例超参数
 # input_size = 7
 # hidden_size = 128
 # output_size = 4
 # learning_rate = 0.001
 #
 # model = MLP(input_size=input_size, hidden_size=hidden_size, output_size=output_size)
-# criterion = nn.CrossEntropyLoss()
+# criterion = nn.CrossEntropyLoss() if task_type == 'classification' else nn.MSELoss()
 # optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 #
 # # 训练和评估
-# train(model, train_loader, criterion, optimizer, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu', save_path="model")
-# eval(model, test_loader, criterion, device='cuda' if torch.cuda.is_available() else 'cpu')
+# train(model, train_loader, criterion, optimizer, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu', save_path="model", task_type='classification')
+# eval(model, test_loader, criterion, device='cuda' if torch.cuda.is_available() else 'cpu', task_type='classification')
 
 # 结束 WandB 运行
 wandb.finish()

@@ -1,6 +1,8 @@
 import pandas as pd
 import torch
 from torch.utils.data import DataLoader, TensorDataset
+import wandb
+
 
 # 加载处理后的数据集
 X_train = pd.read_csv("Q1_X_train.csv")
@@ -34,10 +36,19 @@ from dl_model import MLP
 from utils import train, eval
 from torch.optim.lr_scheduler import CosineAnnealingLR
 
+# 初始化 W&B
+wandb.init(project="MCM2025Q1", entity="tbsi", name="atheletes_MLP:7,128,4")
+
 input_size = 7
 hidden_size = 128
 output_size = 4
 learning_rate = 0.001
+
+from sklearn.utils.class_weight import compute_class_weight
+import numpy as np
+# 计算类别权重
+class_weights = compute_class_weight(class_weight='balanced', classes=np.unique(y_train), y=y_train)
+class_weights_tensor = torch.tensor(class_weights, dtype=torch.float)
 
 model = MLP(input_size=input_size, hidden_size=hidden_size, output_size=output_size)
 criterion = nn.CrossEntropyLoss()
@@ -46,6 +57,10 @@ optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 # 定义余弦退火学习率调度器
 scheduler = CosineAnnealingLR(optimizer, T_max=10, eta_min=0)
 
+
+
 # 训练和评估
 train(model, train_loader, criterion, optimizer, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu', save_path="model", scheduler=scheduler)
 eval(model, test_loader, criterion, device='cuda' if torch.cuda.is_available() else 'cpu')
+
+wandb.finish()

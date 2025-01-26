@@ -4,18 +4,20 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 
 # 加载数据
-data = pd.read_csv("q1_data.csv")
+data = pd.read_csv("q1_dataset.csv")
 # columns = ['Name', 'Year', 'NOC', 'Sport', 'Sex', 'isHost', 'TeamNum',
 # 'AvgGoldRate', 'AvgMedalRate', 'LastMedal', 'Medal']
 
-# 1. 数据清洗
-# 检查缺失值
-print("Missing values:\n", data.isnull().sum())
+# # 1. 数据清洗
+# # 检查缺失值
+# print("Missing values:\n", data.isnull().sum())
+#
+# # 填充或删除缺失值
+# data.fillna(method='ffill', inplace=True)  # 可以根据需要选择合适的填充方法
+print(data.info())
+print(data.describe())
 
-# 填充或删除缺失值
-data.fillna(method='ffill', inplace=True)  # 可以根据需要选择合适的填充方法
-
-# 2. 编码类别特征
+# 编码类别特征
 label_encoders = {}
 for col in ['NOC', 'Sport', 'Sex']:
     le = LabelEncoder()

@@ -513,8 +513,8 @@ for year in year_list_2:
 
 columns = ['year', 'country', 'is_host', 'gold', 'silver', 'bronze', 'total_medal']
 data_df = pd.DataFrame(data, columns=columns)
-print(data_df.info())
-print(data_df)
+# print(data_df.info())
+# print(data_df)
 
 data_df.to_csv("YearCountry-host-medal.csv")
 

@@ -72,7 +72,7 @@ for year in tqdm(year_list, desc='Year Loop'):
                     (athlete_data['Year'] < year) &  # 早于当前年份
                     (athlete_data['NOC'] == noc) &  # 国家匹配
                     (athlete_data['Sport'] == program)  # 运动项目匹配
-                ].sort_values(by='Year', ascending=False).head(2)  # 按年份倒序排列, 仅取前两行（相当于上两届）
+                ].sort_values(by='Year', ascending=False)  # 按年份倒序排列
                 if not past_medals_sport.empty: # 有历史记录
                     gold_num = (past_medals_sport['Medal'] == 'Gold').sum()
                     medal_num = (past_medals_sport['Medal'] != 'No medal').sum()
