@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.8",
+    "heartbeatAt": "2025-01-26T08:08:48.680364",
+    "startedAt": "2025-01-26T08:08:47.207431",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "E:\\25MCM\\q1_2_main.py",
+    "codePathLocal": "q1_2_main.py",
+    "codePath": "q1_2_main.py",
+    "git": {
+        "remote": "https://github.com/ArrebolBlack/MCM2025.git",
+        "commit": "563547aac9ba95b9fb95d03af95141589eaa2626"
+    },
+    "email": "yjqhit@gmail.com",
+    "root": "E:/25MCM",
+    "host": "LAPTOP-0EBPEI57",
+    "username": "20780",
+    "executable": "D:\\anaconda\\envs\\Project1\\python.exe",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2300.0,
+        "min": 0.0,
+        "max": 2300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2300.0,
+            "min": 0.0,
+            "max": 2300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1907.7119102478027,
+            "used": 1421.405502319336
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 63.79735565185547
+    }
+}
