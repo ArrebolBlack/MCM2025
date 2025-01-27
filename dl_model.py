@@ -16,7 +16,11 @@ class APINet(nn.Module):
         # x.shape: [batch_size, seq_len, feature_dim]
         # 运动员概率预测
         if isinstance(self.APM, nn.Module):
+            # TODO: 模型怎么是训练状态
+            self.APM.eval()
             pred = self.APM(x)
+            raise KeyError
+
         else:
             # 假设 APM 是一个来自 Sklearn/XGBoost 的模型
             # 将 PyTorch 张量转换为 NumPy 数组
@@ -42,7 +46,7 @@ class APINet(nn.Module):
 
         # 聚合数据！
         # 示例处理：对序列长度维度进行求和
-        team_pred = pred.sum(dim=1) # (batchsize, 4)
+        team_pred = pred.sum(dim=1) # (batchsize, 4) #TODO:
         # print(team_pred)
 
         # 进行回归！
