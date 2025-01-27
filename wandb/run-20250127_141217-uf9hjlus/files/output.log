@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\25MCM\q1_DL.py", line 62, in <module>
+    train(model, train_loader, criterion, optimizer, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu', save_path="model", scheduler=scheduler)
+  File "E:\25MCM\utils.py", line 17, in train
+    assert task_type in ["classification", "regression"], "task_type must be either 'classification' or 'regression'"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: task_type must be either 'classification' or 'regression'

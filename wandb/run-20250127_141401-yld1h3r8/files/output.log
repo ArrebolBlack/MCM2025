@@ -1,0 +1,99 @@
+
+
+
+
+
+
+Epoch 1/10: 100%|█████████▉| 5801/5805 [00:11<00:00, 479.20batch/s, loss=0.511, accuracy=85.6]
+Epoch 1/10 - Loss: 0.5108, Accuracy: 85.56%
+Epoch 1/10: 100%|██████████| 5805/5805 [00:11<00:00, 504.11batch/s, loss=0.511, accuracy=85.6]
+
+
+
+
+
+Epoch 2/10:  97%|█████████▋| 5634/5805 [00:12<00:00, 491.19batch/s, loss=0.502, accuracy=85.6]
+Epoch 2/10 - Loss: 0.5014, Accuracy: 85.66%
+Epoch 2/10: 100%|██████████| 5805/5805 [00:12<00:00, 466.25batch/s, loss=0.501, accuracy=85.7]
+
+
+
+
+
+Epoch 3/10:  96%|█████████▌| 5563/5805 [00:11<00:00, 401.99batch/s, loss=0.499, accuracy=85.7]
+Epoch 3/10: 100%|██████████| 5805/5805 [00:12<00:00, 470.53batch/s, loss=0.498, accuracy=85.7]
+
+
+
+
+
+Epoch 4/10:  98%|█████████▊| 5693/5805 [00:11<00:00, 461.80batch/s, loss=0.497, accuracy=85.7]
+Epoch 4/10 - Loss: 0.4966, Accuracy: 85.71%
+Epoch 4/10: 100%|██████████| 5805/5805 [00:11<00:00, 485.48batch/s, loss=0.497, accuracy=85.7]
+
+
+
+
+
+Epoch 5/10:  94%|█████████▎| 5441/5805 [00:11<00:00, 465.90batch/s, loss=0.494, accuracy=85.7]
+Epoch 5/10 - Loss: 0.4952, Accuracy: 85.71%
+Epoch 5/10: 100%|██████████| 5805/5805 [00:12<00:00, 466.29batch/s, loss=0.495, accuracy=85.7]
+
+
+
+
+
+Epoch 6/10: 100%|██████████| 5805/5805 [00:12<00:00, 464.57batch/s, loss=0.494, accuracy=85.7]
+Epoch 7/10:   4%|▍         | 224/5805 [00:00<00:14, 395.09batch/s, loss=0.494, accuracy=85.9]
+Epoch 6/10 - Loss: 0.4939, Accuracy: 85.73%
+
+
+
+
+
+
+Epoch 7/10:  95%|█████████▌| 5537/5805 [00:12<00:00, 499.43batch/s, loss=0.493, accuracy=85.7]
+Epoch 7/10 - Loss: 0.4927, Accuracy: 85.74%
+Epoch 7/10: 100%|██████████| 5805/5805 [00:13<00:00, 441.68batch/s, loss=0.493, accuracy=85.7]
+
+
+
+
+
+Epoch 8/10:  93%|█████████▎| 5370/5805 [00:11<00:00, 501.32batch/s, loss=0.492, accuracy=85.8]
+Epoch 8/10 - Loss: 0.4918, Accuracy: 85.76%
+Epoch 8/10: 100%|██████████| 5805/5805 [00:12<00:00, 465.47batch/s, loss=0.492, accuracy=85.8]
+
+
+
+
+
+
+Epoch 9/10: 100%|█████████▉| 5797/5805 [00:13<00:00, 550.49batch/s, loss=0.491, accuracy=85.8]
+Epoch 9/10 - Loss: 0.4910, Accuracy: 85.77%
+Epoch 9/10: 100%|██████████| 5805/5805 [00:13<00:00, 444.70batch/s, loss=0.491, accuracy=85.8]
+
+
+
+
+
+
+Epoch 10/10: 100%|██████████| 5805/5805 [00:13<00:00, 428.80batch/s, loss=0.491, accuracy=85.8]
+Epoch 10/10 - Loss: 0.4906, Accuracy: 85.77%
+最佳模型已保存，指标: 85.7729
+评估 - 损失: 0.4959, 准确率: 85.63%
+分类报告:
+              precision    recall  f1-score   support
+           0       0.86      0.99      0.92     39622
+           1       0.00      0.00      0.00      2356
+           2       0.34      0.00      0.01      2210
+           3       0.43      0.15      0.22      2252
+    accuracy                           0.86     46440
+   macro avg       0.41      0.29      0.29     46440
+weighted avg       0.77      0.86      0.80     46440
+D:\anaconda\envs\Project1\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+D:\anaconda\envs\Project1\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+D:\anaconda\envs\Project1\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))

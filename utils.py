@@ -110,7 +110,7 @@ def eval(model, test_loader, criterion, device='cuda', task_type=None):
                 all_predictions.extend(predicted.cpu().numpy())
             else:
                 all_targets.extend(targets.cpu().numpy())
-                all_predictions.extend(outputs.cpu().numpy().reshape(-1))
+                all_predictions.extend(outputs.cpu().numpy())
 
     loss = running_loss / len(test_loader)
     if task_type == 'classification':

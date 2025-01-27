@@ -449,7 +449,6 @@ print("NOC values for these rows:", noc_values)
 
 num_simulations_2 = 10000
 
-
 record = {
     "FirstMedalCountryNum": [],
     "FirstMedalCountry":[]

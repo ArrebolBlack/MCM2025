@@ -1,0 +1,20 @@
+Epoch 1/10:   0%|          | 0/5805 [00:00<?, ?batch/s]
+Traceback (most recent call last):
+  File "E:\25MCM\q1_DL.py", line 65, in <module>
+    train(model, train_loader, criterion, optimizer, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu', save_path="model", scheduler=scheduler, task_type="classification")
+  File "E:\25MCM\utils.py", line 39, in train
+    loss = criterion(outputs, targets)  # 计算损失
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\envs\Project1\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\envs\Project1\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\envs\Project1\Lib\site-packages\torch\nn\modules\loss.py", line 1293, in forward
+    return F.cross_entropy(
+           ^^^^^^^^^^^^^^^^
+  File "D:\anaconda\envs\Project1\Lib\site-packages\torch\nn\functional.py", line 3479, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument weight in method wrapper_CUDA_nll_loss_forward)

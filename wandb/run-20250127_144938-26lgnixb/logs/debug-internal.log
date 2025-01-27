@@ -1,0 +1,610 @@
+2025-01-27 14:49:38,485 INFO    StreamThr :47040 [internal.py:wandb_internal():85] W&B internal server running at pid: 47040, started at: 2025-01-27 14:49:38.484431
+2025-01-27 14:49:38,486 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status
+2025-01-27 14:49:38,498 INFO    WriterThread:47040 [datastore.py:open_for_write():87] open: E:\25MCM\wandb\run-20250127_144938-26lgnixb\run-26lgnixb.wandb
+2025-01-27 14:49:38,499 DEBUG   SenderThread:47040 [sender.py:send():379] send: header
+2025-01-27 14:49:38,684 DEBUG   SenderThread:47040 [sender.py:send():379] send: run
+2025-01-27 14:49:39,602 INFO    SenderThread:47040 [dir_watcher.py:__init__():211] watching files in: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files
+2025-01-27 14:49:39,603 INFO    SenderThread:47040 [sender.py:_start_run_threads():1188] run started: 26lgnixb with start time 1737960578.486431
+2025-01-27 14:49:39,618 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: check_version
+2025-01-27 14:49:39,618 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: check_version
+2025-01-27 14:49:40,135 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: run_start
+2025-01-27 14:49:40,176 DEBUG   HandlerThread:47040 [system_info.py:__init__():26] System info init
+2025-01-27 14:49:40,176 DEBUG   HandlerThread:47040 [system_info.py:__init__():41] System info init done
+2025-01-27 14:49:40,176 INFO    HandlerThread:47040 [system_monitor.py:start():194] Starting system monitor
+2025-01-27 14:49:40,177 INFO    SystemMonitor:47040 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-01-27 14:49:40,177 INFO    HandlerThread:47040 [system_monitor.py:probe():214] Collecting system info
+2025-01-27 14:49:40,182 INFO    SystemMonitor:47040 [interfaces.py:start():188] Started cpu monitoring
+2025-01-27 14:49:40,183 INFO    SystemMonitor:47040 [interfaces.py:start():188] Started disk monitoring
+2025-01-27 14:49:40,183 INFO    SystemMonitor:47040 [interfaces.py:start():188] Started gpu monitoring
+2025-01-27 14:49:40,194 INFO    SystemMonitor:47040 [interfaces.py:start():188] Started memory monitoring
+2025-01-27 14:49:40,219 INFO    SystemMonitor:47040 [interfaces.py:start():188] Started network monitoring
+2025-01-27 14:49:40,248 DEBUG   HandlerThread:47040 [system_info.py:probe():152] Probing system
+2025-01-27 14:49:40,250 DEBUG   HandlerThread:47040 [system_info.py:_probe_git():137] Probing git
+2025-01-27 14:49:40,362 DEBUG   HandlerThread:47040 [system_info.py:_probe_git():145] Probing git done
+2025-01-27 14:49:40,362 DEBUG   HandlerThread:47040 [system_info.py:probe():200] Probing system done
+2025-01-27 14:49:40,362 DEBUG   HandlerThread:47040 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.8', 'heartbeatAt': '2025-01-27T06:49:40.248682', 'startedAt': '2025-01-27T06:49:38.472431', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\25MCM\\q1_2_main.py', 'codePathLocal': 'q1_2_main.py', 'codePath': 'q1_2_main.py', 'git': {'remote': 'https://github.com/ArrebolBlack/MCM2025.git', 'commit': '2b9610fd4345675750663b938b113ed8889f5768'}, 'email': 'yjqhit@gmail.com', 'root': 'E:/25MCM', 'host': 'LAPTOP-0EBPEI57', 'username': '20780', 'executable': 'D:\\anaconda\\envs\\Project1\\python.exe', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2300.0, 'min': 0.0, 'max': 2300.0}, 'cpu_freq_per_core': [{'current': 2300.0, 'min': 0.0, 'max': 2300.0}], 'disk': {'/': {'total': 1907.7119102478027, 'used': 1421.0783958435059}}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 63.79735565185547}}
+2025-01-27 14:49:40,362 INFO    HandlerThread:47040 [system_monitor.py:probe():224] Finished collecting system info
+2025-01-27 14:49:40,362 INFO    HandlerThread:47040 [system_monitor.py:probe():227] Publishing system info
+2025-01-27 14:49:40,362 DEBUG   HandlerThread:47040 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-01-27 14:49:40,607 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_created():271] file/dir created: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\conda-environment.yaml
+2025-01-27 14:49:50,364 DEBUG   HandlerThread:47040 [system_info.py:_save_conda():224] Saving conda packages done
+2025-01-27 14:49:50,364 INFO    HandlerThread:47040 [system_monitor.py:probe():229] Finished publishing system info
+2025-01-27 14:49:50,372 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:49:50,373 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: keepalive
+2025-01-27 14:49:50,373 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:49:50,373 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: keepalive
+2025-01-27 14:49:50,373 DEBUG   SenderThread:47040 [sender.py:send():379] send: files
+2025-01-27 14:49:50,373 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2025-01-27 14:49:50,520 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: python_packages
+2025-01-27 14:49:50,520 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: python_packages
+2025-01-27 14:49:50,521 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:49:50,521 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:49:50,522 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:50,685 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\conda-environment.yaml
+2025-01-27 14:49:50,685 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_created():271] file/dir created: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\requirements.txt
+2025-01-27 14:49:50,685 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_created():271] file/dir created: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-metadata.json
+2025-01-27 14:49:51,139 DEBUG   SenderThread:47040 [sender.py:send():379] send: telemetry
+2025-01-27 14:49:51,139 DEBUG   SenderThread:47040 [sender.py:send():379] send: telemetry
+2025-01-27 14:49:51,533 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:51,536 INFO    wandb-upload_0:47040 [upload_job.py:push():130] Uploaded file C:\Users\20780\AppData\Local\Temp\tmp8_6s1w3iwandb\5hqnzs8c-wandb-metadata.json
+2025-01-27 14:49:52,548 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:52,716 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_created():271] file/dir created: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:49:53,562 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:54,162 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:49:54,567 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:54,737 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:49:55,572 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:56,581 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:56,751 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:49:57,582 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:58,596 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:49:58,770 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:49:59,163 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:49:59,612 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:00,626 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:00,781 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:01,637 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:02,643 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:02,800 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:03,650 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:04,170 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:04,653 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:04,811 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:05,524 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:50:05,524 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:50:05,666 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:06,678 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:06,832 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:07,682 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:08,697 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:08,850 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:09,173 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:09,571 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:50:09,572 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:50:09,572 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:50:09,574 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:50:09,698 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:09,852 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\config.yaml
+2025-01-27 14:50:09,852 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_created():271] file/dir created: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:50:10,717 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:10,864 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:11,704 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:11,874 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:12,717 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:12,889 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:13,725 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:14,489 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:14,754 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:14,911 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:15,727 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:16,742 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:16,942 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:17,748 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:18,754 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:18,959 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:19,493 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:19,765 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:20,520 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:50:20,520 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:50:20,769 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:20,969 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:21,772 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:22,787 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:22,986 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:23,802 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:24,500 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:24,803 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:25,018 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:25,824 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:26,819 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:27,037 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:27,557 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:50:27,559 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:50:27,559 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:50:27,560 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:50:27,834 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:28,051 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:50:28,844 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:29,065 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:29,504 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:29,848 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:30,067 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:30,858 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:31,074 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:31,859 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:32,862 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:33,099 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:33,869 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:34,509 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:34,875 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:35,103 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:35,533 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:50:35,533 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:50:35,884 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:36,889 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:37,119 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:37,899 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:38,920 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:39,145 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:39,513 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:39,901 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:40,227 DEBUG   SystemMonitor:47040 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-01-27 14:50:40,228 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:50:40,900 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:41,186 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:41,904 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:42,919 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:43,215 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:43,922 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:44,515 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:44,926 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:45,255 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:45,878 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:50:45,879 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:50:45,879 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:50:45,880 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:50:45,927 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:46,264 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:50:46,942 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:47,295 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:47,956 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:48,310 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:48,957 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:49,515 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:49,964 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:50,343 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:50,543 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:50:50,543 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:50:50,979 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:51,968 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:52,390 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:52,974 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:53,977 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:54,427 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:54,516 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:50:54,992 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:56,007 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:56,452 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:57,020 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:58,023 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:58,488 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:50:59,028 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:50:59,518 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:00,031 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:00,525 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:01,035 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:02,047 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:02,556 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:03,065 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:04,071 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:04,292 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:51:04,293 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:51:04,293 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:51:04,294 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:51:04,519 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:04,613 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:51:04,613 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:05,074 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:05,567 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:51:05,568 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:51:05,626 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:06,080 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:06,632 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:07,095 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:08,106 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:08,659 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:09,117 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:09,528 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:10,126 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:10,235 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:51:10,710 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:11,126 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:12,141 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:12,756 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:13,143 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:14,157 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:14,532 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:14,790 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:15,161 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:16,171 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:16,839 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:17,187 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:18,200 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:18,874 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:19,214 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:19,539 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:20,221 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:20,578 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:51:20,578 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:51:20,918 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:21,224 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:22,227 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:22,456 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:51:22,457 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:51:22,457 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:51:22,459 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:51:22,950 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:51:22,951 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:23,227 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:23,976 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:24,239 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:24,541 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:24,987 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:25,251 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:26,255 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:27,033 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:27,267 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:28,277 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:29,053 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:29,278 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:29,542 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:30,281 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:31,088 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:31,288 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:32,293 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:33,137 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:33,307 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:34,312 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:34,543 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:35,163 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:35,316 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:35,592 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:51:35,592 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:51:36,320 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:37,197 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:37,332 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:38,337 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:39,251 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:39,342 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:39,545 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:40,277 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:51:40,353 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:41,112 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:51:41,113 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:51:41,113 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:51:41,115 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:51:41,291 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:51:41,291 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:41,366 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:42,323 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:42,388 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:43,329 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:43,375 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:44,365 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:44,387 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:44,545 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:45,390 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:46,389 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:46,395 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:47,396 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:48,422 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:48,424 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:49,417 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:49,551 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:50,420 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:50,463 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:50,602 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:51:50,602 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:51:51,423 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:52,428 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:52,515 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:53,431 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:54,440 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:54,549 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:54,560 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:55,452 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:56,461 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:56,582 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:57,471 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:58,486 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:58,614 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:51:59,494 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:51:59,532 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:51:59,532 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:51:59,532 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:51:59,534 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:51:59,566 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:51:59,618 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:52:00,509 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:00,644 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:01,523 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:01,646 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:02,535 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:02,684 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:03,548 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:04,559 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:04,568 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:04,725 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:05,570 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:05,601 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:52:05,601 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:52:06,581 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:06,776 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:07,596 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:08,604 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:08,815 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:09,578 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:09,620 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:10,255 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:52:10,627 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:10,866 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:11,639 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:12,642 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:12,922 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:13,657 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:14,582 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:14,661 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:14,953 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:15,666 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:16,674 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:16,983 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:17,678 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:18,681 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:19,013 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:19,492 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:52:19,493 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:52:19,493 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:52:19,494 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:52:19,584 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:19,692 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:20,017 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:52:20,605 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:52:20,605 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:52:20,699 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:21,061 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:21,704 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:22,062 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:22,715 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:23,085 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:23,720 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:24,583 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:24,728 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:25,113 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:25,730 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:26,738 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:27,151 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:27,753 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:28,772 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:29,190 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:29,587 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:29,803 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:30,797 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:31,220 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:31,803 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:32,816 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:33,258 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:33,818 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:34,589 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:34,828 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:35,283 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:35,627 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:52:35,627 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:52:35,841 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:36,855 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:37,312 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:37,866 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:38,867 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:39,355 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:39,594 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:39,851 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:52:39,851 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:52:39,852 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:52:39,853 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:52:39,867 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:40,270 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:52:40,364 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:52:40,870 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:41,393 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:41,881 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:42,396 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:42,891 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:43,449 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:43,893 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:44,453 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:44,598 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:44,903 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:45,909 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:46,481 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:46,923 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:47,928 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:48,525 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:48,942 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:49,601 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:49,947 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:50,550 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:50,644 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-27 14:52:50,644 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: stop_status
+2025-01-27 14:52:50,938 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:51,954 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:52,581 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:52,953 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:53,962 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:54,604 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:52:54,625 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:54,975 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:55,977 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:56,657 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:56,985 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:58,000 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:58,698 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:52:59,008 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:52:59,609 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:53:00,019 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:53:00,027 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:53:00,028 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:53:00,028 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:53:00,029 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:53:00,747 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:53:00,748 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:53:01,024 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:53:01,765 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:53:02,027 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:53:03,029 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-27 14:53:03,030 DEBUG   SenderThread:47040 [sender.py:send():379] send: history
+2025-01-27 14:53:03,030 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: summary_record
+2025-01-27 14:53:03,031 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:53:03,031 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: server_info
+2025-01-27 14:53:03,032 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:53:03,032 DEBUG   SenderThread:47040 [sender.py:send():379] send: telemetry
+2025-01-27 14:53:03,032 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: server_info
+2025-01-27 14:53:03,314 DEBUG   SenderThread:47040 [sender.py:send():379] send: exit
+2025-01-27 14:53:03,314 INFO    SenderThread:47040 [sender.py:send_exit():586] handling exit code: 0
+2025-01-27 14:53:03,314 INFO    SenderThread:47040 [sender.py:send_exit():588] handling runtime: 203
+2025-01-27 14:53:03,314 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:53:03,315 INFO    SenderThread:47040 [sender.py:send_exit():594] send defer
+2025-01-27 14:53:03,315 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,315 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 0
+2025-01-27 14:53:03,315 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,315 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-01-27 14:53:03,315 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 1
+2025-01-27 14:53:03,315 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,315 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 1
+2025-01-27 14:53:03,315 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,315 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-01-27 14:53:03,315 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 2
+2025-01-27 14:53:03,315 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,315 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 2
+2025-01-27 14:53:03,316 INFO    HandlerThread:47040 [system_monitor.py:finish():203] Stopping system monitor
+2025-01-27 14:53:03,316 DEBUG   SystemMonitor:47040 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-01-27 14:53:03,324 DEBUG   SystemMonitor:47040 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-01-27 14:53:03,324 INFO    HandlerThread:47040 [interfaces.py:finish():200] Joined cpu monitor
+2025-01-27 14:53:03,325 INFO    HandlerThread:47040 [interfaces.py:finish():200] Joined disk monitor
+2025-01-27 14:53:03,381 INFO    HandlerThread:47040 [interfaces.py:finish():200] Joined gpu monitor
+2025-01-27 14:53:03,382 INFO    HandlerThread:47040 [interfaces.py:finish():200] Joined memory monitor
+2025-01-27 14:53:03,382 INFO    HandlerThread:47040 [interfaces.py:finish():200] Joined network monitor
+2025-01-27 14:53:03,382 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,382 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-01-27 14:53:03,382 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 3
+2025-01-27 14:53:03,382 DEBUG   SenderThread:47040 [sender.py:send():379] send: stats
+2025-01-27 14:53:03,382 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,382 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 3
+2025-01-27 14:53:03,382 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,382 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-01-27 14:53:03,382 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 4
+2025-01-27 14:53:03,383 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,383 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 4
+2025-01-27 14:53:03,383 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,383 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-01-27 14:53:03,383 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 5
+2025-01-27 14:53:03,383 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,383 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 5
+2025-01-27 14:53:03,383 DEBUG   SenderThread:47040 [sender.py:send():379] send: summary
+2025-01-27 14:53:03,384 INFO    SenderThread:47040 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-01-27 14:53:03,384 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,384 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-01-27 14:53:03,384 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 6
+2025-01-27 14:53:03,384 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,384 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 6
+2025-01-27 14:53:03,384 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,384 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-01-27 14:53:03,386 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:53:03,680 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 7
+2025-01-27 14:53:03,680 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:03,680 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 7
+2025-01-27 14:53:03,680 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:03,680 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-01-27 14:53:03,781 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\config.yaml
+2025-01-27 14:53:03,781 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:53:03,782 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:53:04,320 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-27 14:53:05,652 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 8
+2025-01-27 14:53:05,652 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: poll_exit
+2025-01-27 14:53:05,652 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:05,652 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 8
+2025-01-27 14:53:05,653 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:05,653 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-01-27 14:53:05,653 INFO    SenderThread:47040 [job_builder.py:build():440] Attempting to build job artifact
+2025-01-27 14:53:05,653 INFO    SenderThread:47040 [job_builder.py:_get_source_type():569] is repo sourced job
+2025-01-27 14:53:05,696 INFO    SenderThread:47040 [job_builder.py:build():545] adding wandb-job metadata file
+2025-01-27 14:53:05,701 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 9
+2025-01-27 14:53:05,702 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:05,702 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 9
+2025-01-27 14:53:05,702 DEBUG   SenderThread:47040 [sender.py:send():379] send: artifact
+2025-01-27 14:53:05,802 INFO    Thread-16 :47040 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:53:06,327 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-27 14:53:07,559 INFO    wandb-upload_0:47040 [upload_job.py:push():85] Skipped uploading C:\Users\20780\AppData\Local\wandb\wandb\artifacts\staging\tmp0cy9nb6g
+2025-01-27 14:53:07,908 INFO    wandb-upload_1:47040 [upload_job.py:push():88] Uploaded file C:\Users\20780\AppData\Local\Temp\tmp_22pyat1\wandb-job.json
+2025-01-27 14:53:09,620 INFO    SenderThread:47040 [sender.py:send_artifact():1530] sent artifact job-https___github.com_ArrebolBlack_MCM2025.git_q1_2_main.py - {'id': 'QXJ0aWZhY3Q6MTQ2ODgxNDA1NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU0OTE0NzI1Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTQ2ODc5NTUwOQ==', 'versionIndex': 6}}}
+2025-01-27 14:53:09,620 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:09,620 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-01-27 14:53:09,620 INFO    SenderThread:47040 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-01-27 14:53:09,823 INFO    SenderThread:47040 [dir_watcher.py:finish():388] scan: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files
+2025-01-27 14:53:09,823 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\conda-environment.yaml conda-environment.yaml
+2025-01-27 14:53:09,824 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\config.yaml config.yaml
+2025-01-27 14:53:09,825 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log output.log
+2025-01-27 14:53:09,827 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\requirements.txt requirements.txt
+2025-01-27 14:53:09,828 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-metadata.json wandb-metadata.json
+2025-01-27 14:53:09,829 INFO    SenderThread:47040 [dir_watcher.py:finish():402] scan save: E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json wandb-summary.json
+2025-01-27 14:53:09,830 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 10
+2025-01-27 14:53:09,830 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: poll_exit
+2025-01-27 14:53:09,831 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:09,831 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 10
+2025-01-27 14:53:09,832 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:09,832 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-01-27 14:53:09,832 INFO    SenderThread:47040 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-27 14:53:10,358 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-27 14:53:10,358 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: poll_exit
+2025-01-27 14:53:10,458 INFO    wandb-upload_0:47040 [upload_job.py:push():130] Uploaded file E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\conda-environment.yaml
+2025-01-27 14:53:10,779 INFO    wandb-upload_1:47040 [upload_job.py:push():130] Uploaded file E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\config.yaml
+2025-01-27 14:53:11,126 INFO    wandb-upload_3:47040 [upload_job.py:push():130] Uploaded file E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\requirements.txt
+2025-01-27 14:53:11,300 INFO    wandb-upload_4:47040 [upload_job.py:push():130] Uploaded file E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\wandb-summary.json
+2025-01-27 14:53:11,310 INFO    wandb-upload_2:47040 [upload_job.py:push():130] Uploaded file E:\25MCM\wandb\run-20250127_144938-26lgnixb\files\output.log
+2025-01-27 14:53:11,370 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: status_report
+2025-01-27 14:53:11,370 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-27 14:53:11,371 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: poll_exit
+2025-01-27 14:53:11,522 INFO    Thread-15 (_thread_body):47040 [sender.py:transition_state():614] send defer: 11
+2025-01-27 14:53:11,522 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:11,522 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 11
+2025-01-27 14:53:11,523 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:11,523 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-01-27 14:53:11,523 INFO    SenderThread:47040 [file_pusher.py:join():175] waiting for file pusher
+2025-01-27 14:53:11,523 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 12
+2025-01-27 14:53:11,524 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:11,524 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 12
+2025-01-27 14:53:11,524 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:11,524 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-01-27 14:53:11,524 INFO    SenderThread:47040 [file_stream.py:finish():601] file stream finish called
+2025-01-27 14:53:11,811 INFO    SenderThread:47040 [file_stream.py:finish():605] file stream finish is done
+2025-01-27 14:53:11,811 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 13
+2025-01-27 14:53:11,811 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:11,811 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 13
+2025-01-27 14:53:11,811 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:11,811 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-01-27 14:53:11,811 INFO    SenderThread:47040 [sender.py:transition_state():614] send defer: 14
+2025-01-27 14:53:11,811 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: defer
+2025-01-27 14:53:11,811 INFO    HandlerThread:47040 [handler.py:handle_request_defer():184] handle defer: 14
+2025-01-27 14:53:11,812 DEBUG   SenderThread:47040 [sender.py:send():379] send: final
+2025-01-27 14:53:11,812 DEBUG   SenderThread:47040 [sender.py:send():379] send: footer
+2025-01-27 14:53:11,812 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: defer
+2025-01-27 14:53:11,812 INFO    SenderThread:47040 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-01-27 14:53:11,812 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-27 14:53:11,813 DEBUG   SenderThread:47040 [sender.py:send_request():406] send_request: poll_exit
+2025-01-27 14:53:11,813 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-27 14:53:11,813 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: get_summary
+2025-01-27 14:53:11,813 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: sampled_history
+2025-01-27 14:53:11,814 DEBUG   HandlerThread:47040 [handler.py:handle_request():158] handle_request: shutdown
+2025-01-27 14:53:11,814 INFO    HandlerThread:47040 [handler.py:finish():882] shutting down handler
+2025-01-27 14:53:12,816 INFO    SenderThread:47040 [sender.py:finish():1608] shutting down sender
+2025-01-27 14:53:12,816 INFO    WriterThread:47040 [datastore.py:close():296] close: E:\25MCM\wandb\run-20250127_144938-26lgnixb\run-26lgnixb.wandb
+2025-01-27 14:53:12,817 INFO    SenderThread:47040 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-27 14:53:12,817 INFO    SenderThread:47040 [file_pusher.py:join():175] waiting for file pusher

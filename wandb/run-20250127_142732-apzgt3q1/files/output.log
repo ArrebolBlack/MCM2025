@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+Epoch 1/10: 100%|██████████| 2388/2388 [00:19<00:00, 123.34batch/s, loss=1.87]
+Epoch 2/10:   4%|▍         | 90/2388 [00:00<00:17, 131.48batch/s, loss=1.36]
+Epoch 1/10 - Loss: 1.8686
+
+
+
+
+
+
+
+
+
+Epoch 2/10:  97%|█████████▋| 2309/2388 [00:18<00:00, 116.75batch/s, loss=1.27]
+Epoch 2/10 - Loss: 1.2914
+Epoch 2/10: 100%|██████████| 2388/2388 [00:19<00:00, 122.94batch/s, loss=1.29]
+
+
+
+
+
+
+
+
+
+Epoch 3/10:  98%|█████████▊| 2334/2388 [00:18<00:00, 127.01batch/s, loss=1.28]
+Epoch 3/10 - Loss: 1.2748
+Epoch 3/10: 100%|██████████| 2388/2388 [00:19<00:00, 123.41batch/s, loss=1.27]
+
+
+
+
+
+
+
+
+
+Epoch 4/10:  99%|█████████▉| 2375/2388 [00:19<00:00, 122.90batch/s, loss=1.24]
+Epoch 4/10 - Loss: 1.2411
+Epoch 4/10: 100%|██████████| 2388/2388 [00:19<00:00, 120.33batch/s, loss=1.24]
+
+
+
+
+
+
+
+
+
+Epoch 5/10:  97%|█████████▋| 2306/2388 [00:19<00:00, 110.31batch/s, loss=1.21]
+Epoch 5/10 - Loss: 1.2061
+Epoch 5/10: 100%|██████████| 2388/2388 [00:20<00:00, 115.58batch/s, loss=1.21]
+
+
+
+
+
+
+
+
+
+Epoch 6/10: 100%|██████████| 2388/2388 [00:20<00:00, 115.79batch/s, loss=1.19]
+Epoch 7/10:   3%|▎         | 75/2388 [00:00<00:24, 96.34batch/s, loss=1.36]
+Epoch 6/10 - Loss: 1.1941
+
+
+
+
+
+
+
+
+
+Epoch 7/10:  97%|█████████▋| 2325/2388 [00:18<00:00, 126.55batch/s, loss=1.19]
+Epoch 7/10 - Loss: 1.1768
+Epoch 7/10: 100%|██████████| 2388/2388 [00:19<00:00, 122.99batch/s, loss=1.18]
+
+
+
+
+
+
+
+
+
+Epoch 8/10: 100%|██████████| 2388/2388 [00:20<00:00, 114.01batch/s, loss=1.16]
+Epoch 9/10:   3%|▎         | 78/2388 [00:00<00:20, 113.80batch/s, loss=0.425]
+Epoch 8/10 - Loss: 1.1634
+
+
+
+
+
+
+
+
+
+
+Epoch 9/10:  99%|█████████▉| 2367/2388 [00:20<00:00, 113.03batch/s, loss=1.15]
+Epoch 9/10 - Loss: 1.1566
+Epoch 9/10: 100%|██████████| 2388/2388 [00:20<00:00, 113.88batch/s, loss=1.16]
+
+
+
+
+
+
+
+
+
+
+Epoch 10/10: 100%|██████████| 2388/2388 [00:21<00:00, 112.15batch/s, loss=1.15]
+Epoch 10/10 - Loss: 1.1533
+最佳模型已保存，指标: 1.1533
+Traceback (most recent call last):
+  File "E:\25MCM\q1_2_main.py", line 42, in <module>
+    eval(model, test_loader, criterion, device='cuda' if torch.cuda.is_available() else 'cpu', task_type="regression")
+  File "E:\25MCM\utils.py", line 124, in eval
+    mse = np.mean((np.array(all_targets) - np.array(all_predictions)) ** 2)
+                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+ValueError: operands could not be broadcast together with shapes (598,2) (1196,)

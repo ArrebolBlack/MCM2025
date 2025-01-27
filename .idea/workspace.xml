@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="488c9869-b615-4c2b-9ea0-bea6bcb4e2d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/q1_2_make_2028_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_re.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q3_Clustering/make_clustering_dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025_Problem_C_Data/2025_Problem_C_Data/summerOly_medal_counts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/2025_Problem_C_Data/2025_Problem_C_Data/summerOly_medal_counts.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOC_label_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/NOC_label_encoder.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_10.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_10.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_3.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_4.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_4.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_5.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_5.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_6.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_6.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_8.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_8.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/_best_model_epoch_9.pth" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/_best_model_epoch_9.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q1_2_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/q1_2_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q1_DL.py" beforeDir="false" afterPath="$PROJECT_DIR$/q1_DL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_re.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_re.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +57,7 @@
     "Python tests.Python tests in test_re.py.executor": "Run",
     "Python.Q1_ML_auto.executor": "Run",
     "Python.dl_model.executor": "Run",
+    "Python.make_clustering_dataset.executor": "Run",
     "Python.make_data_for_dzt.executor": "Run",
     "Python.process_data.executor": "Run",
     "Python.q1_2_main.executor": "Run",
@@ -61,8 +72,8 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_re.py">
-    <configuration name="make_data_for_dzt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.make_clustering_dataset">
+    <configuration name="make_clustering_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="25MCM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,11 +82,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q3_Clustering" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_data_for_dzt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q3_Clustering/make_clustering_dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="q1_2_make_2028_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="q1_DL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="25MCM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +130,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q1_2_make_2028_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q1_DL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.make_clustering_dataset" />
+        <item itemvalue="Python.q1_2_main" />
+        <item itemvalue="Python.q1_DL" />
         <item itemvalue="Python tests.Python tests in test_re.py" />
         <item itemvalue="Python.read_data" />
-        <item itemvalue="Python.q1_2_make_2028_data" />
-        <item itemvalue="Python.make_data_for_dzt" />
-        <item itemvalue="Python.q1_2_main" />
       </list>
     </recent_temporary>
   </component>
