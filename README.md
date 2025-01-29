@@ -21,6 +21,12 @@ APINet本身作为一种通用有效的概率聚合计算框架，包括运动�
 
 总而言之，我们提出的APINet具有很好的性能，通用性与可解释性，以人为本，回归奥林匹克竞赛的本质，贴近现实，可以很好地预测未来的情况，我们旨在为更多国家和人提供有价值的建议，将奥林匹克精神传播至世界每一个角落。
 
+
+## Paper
+
+The full paper is available at [2025MCM (3).pdf](https://github.com/ArrebolBlack/MCM2025/blob/master/2025MCM%20(3).pdf).
+
+
 ## Installation
 
 1. Clone the repository:
