@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the APINet algorithm proposed in the paper "Integrating Athlete Probabilities for National Olympic Medal Forecasting," submitted for the 2025 MCM C problem.
 
-![Description of Image](fig3.png)
+![Description of Image](fig_3.png)
 
 ![Description of Image](.png)
 
